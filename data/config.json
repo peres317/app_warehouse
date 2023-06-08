@@ -1,0 +1,25 @@
+{
+    "ABSOLUTE_PATH_OF_WAREHOUSE": "/absolute/path/to/warehouse/",
+    "MYSQL": {
+        "host": "127.0.0.1",
+        "database": "app_warehouse",
+        "user": "load",
+        "password": "password"
+    },
+    "ANDROZOO": {
+        "API_KEY": "password",
+        "INDEX_FILE": "./latest.csv.gz"
+    },
+    "API_ACCESS_KEYS": [
+        "password1",
+        "password2",
+        "...",
+        "passwordN"
+    ],
+    "API_ADMIN_ACCESS_KEYS": [
+        "password1",
+        "password2",
+        "...",
+        "passwordN"
+    ]
+}
