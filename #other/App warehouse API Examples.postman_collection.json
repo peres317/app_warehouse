@@ -1,0 +1,882 @@
+{
+	"info": {
+		"_postman_id": "f5c33acd-45a0-48e6-b768-5c64b8200494",
+		"name": "App warehouse API Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16677964"
+	},
+	"item": [
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "GET Update aosp",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/update/aosp",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update",
+								"aosp"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Update aosp",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/update/aosp",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"update",
+										"aosp"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 13 Jun 2023 15:10:27 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "22"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"requested\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Update app candidates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/update/app_candidates",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update",
+								"app_candidates"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Update app candidates",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/update/app_candidates",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"update",
+										"app_candidates"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 11 May 2023 20:26:52 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "17"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"busy\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Clean cache",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/clean_cache",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"clean_cache"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Clean cache",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/clean_cache",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"clean_cache"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 11 May 2023 20:13:25 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "19"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"deleted_files\": 5\n}"
+						}
+					]
+				},
+				{
+					"name": "GET N random apps download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/get/n_random_apps?n_apps=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"get",
+								"n_random_apps"
+							],
+							"query": [
+								{
+									"key": "n_apps",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET N random apps download",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/get/n_random_apps?n_apps=5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"get",
+										"n_random_apps"
+									],
+									"query": [
+										{
+											"key": "n_apps",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 11 May 2023 21:13:29 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "17"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"busy\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET N random candidate apps download",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/get/n_random_app_candidates?n_apps=5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"get",
+								"n_random_app_candidates"
+							],
+							"query": [
+								{
+									"key": "n_apps",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET N random candidate apps download",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/get/n_random_app_candidates?n_apps=5",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"get",
+										"n_random_app_candidates"
+									],
+									"query": [
+										{
+											"key": "n_apps",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Thu, 11 May 2023 21:33:08 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "17"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"busy\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Apply metrics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/admin/update/apply_metrics",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"update",
+								"apply_metrics"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Apply metrics",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/admin/update/apply_metrics",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"update",
+										"apply_metrics"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 13 Jun 2023 15:09:39 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "22"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"requested\"\n}"
+						}
+					]
+				},
+				{
+					"name": "POST Json",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PrivacyRank\": {\r\n        \"name\": \"DELETE ME\",\r\n        \"source\": \"https://tosdr.org/\",\r\n        \"timestamp\": \"2023-05-23 16:02:39\",\r\n        \"permission_ranks_list\": [],\r\n        \"app_scores_list\": []\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:8000/admin/post/json",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"post",
+								"json"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST Json",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"PrivacyRank\": {\r\n        \"name\": \"DELETE ME\",\r\n        \"source\": \"https://tosdr.org/\",\r\n        \"timestamp\": \"2023-05-23 16:02:39\",\r\n        \"permission_ranks_list\": [],\r\n        \"app_scores_list\": []\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://localhost:8000/admin/post/json",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"admin",
+										"post",
+										"json"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Wed, 21 Jun 2023 18:51:35 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "24"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"startus\": \"successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "General user",
+			"item": [
+				{
+					"name": "GET App by hash",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/get/app/hash?hash=78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"get",
+								"app",
+								"hash"
+							],
+							"query": [
+								{
+									"key": "hash",
+									"value": "78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a"
+								},
+								{
+									"key": "hash",
+									"value": "incorrect",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET App by hash",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/get/app/hash?hash=78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"get",
+										"app",
+										"hash"
+									],
+									"query": [
+										{
+											"key": "hash",
+											"value": "78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a"
+										},
+										{
+											"key": "hash",
+											"value": "incorrect",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 13 Jun 2023 15:05:55 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "10097"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"App\": {\n        \"hash\": \"78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a\",\n        \"package\": \"com.google.android.apps.fitness\",\n        \"version_code\": 2026561651,\n        \"version_name\": \"2023.04.13.00.x86_64.release\",\n        \"min_sdk_version\": 23,\n        \"target_sdk_version\": 33,\n        \"max_sdk_version\": null,\n        \"category\": \"HEALTH_AND_FITNESS\",\n        \"uses_permission_list\": [\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_BACKGROUND_LOCATION\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.ACCESS_BACKGROUND_LOCATION\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_COARSE_LOCATION\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.ACCESS_COARSE_LOCATION\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_FINE_LOCATION\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.ACCESS_FINE_LOCATION\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_NETWORK_STATE\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.CAMERA\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.CAMERA\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.FOREGROUND_SERVICE\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.FOREGROUND_SERVICE_HEALTH\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.GET_ACCOUNTS\",\n                    \"protection_level\": \"dangerous\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.GET_ACCOUNTS\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.GET_PACKAGE_SIZE\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_BASAL_METABOLIC_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_BLOOD_GLUCOSE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_BLOOD_PRESSURE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_BODY_FAT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_BODY_TEMPERATURE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_DISTANCE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_EXERCISE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_HEART_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_HEIGHT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_HYDRATION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_NUTRITION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_OXYGEN_SATURATION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_POWER\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_RESPIRATORY_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_SLEEP\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_SPEED\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_STEPS\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_TOTAL_CALORIES_BURNED\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.READ_WEIGHT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_BASAL_METABOLIC_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_BLOOD_GLUCOSE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_BLOOD_PRESSURE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_BODY_FAT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_BODY_TEMPERATURE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_DISTANCE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_EXERCISE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_HEART_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_HEIGHT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_HYDRATION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_NUTRITION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_OXYGEN_SATURATION\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_POWER\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_RESPIRATORY_RATE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_SLEEP\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_SPEED\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_STEPS\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_TOTAL_CALORIES_BURNED\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.health.WRITE_WEIGHT\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.INTERNET\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.MANAGE_ACCOUNTS\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.POST_NOTIFICATIONS\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.POST_NOTIFICATIONS\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.QUERY_ALL_PACKAGES\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.READ_SYNC_SETTINGS\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.READ_SYNC_STATS\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.RECEIVE_BOOT_COMPLETED\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.VIBRATE\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.WAKE_LOCK\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.c2dm.permission.RECEIVE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.gms.permission.ACTIVITY_RECOGNITION\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": [\n                        {\n                            \"PermissionGroup\": {\n                                \"name\": \"android.permission-group.PERSONAL_INFO\"\n                            }\n                        }\n                    ],\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.providers.gsf.permission.READ_GSERVICES\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            }\n        ],\n        \"defines_permission_list\": [\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.apps.fitness.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\",\n                    \"protection_level\": \"signature\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            }\n        ],\n        \"defines_group_list\": null,\n        \"extraction_metadata_list\": [\n            {\n                \"ExtractionMetadata\": {\n                    \"source\": \"APKPure\",\n                    \"method\": \"web scraping\",\n                    \"timestamp\": \"2023-06-10T11:22:40\"\n                }\n            }\n        ],\n        \"score_list\": [\n            {\n                \"Score\": {\n                    \"value\": 2.78,\n                    \"rank_name\": \"PTaP privacy impact\",\n                    \"app_hash\": \"78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a\"\n                }\n            },\n            {\n                \"Score\": {\n                    \"value\": 3.33,\n                    \"rank_name\": \"PTaP threats by review\",\n                    \"app_hash\": \"78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a\"\n                }\n            },\n            {\n                \"Score\": {\n                    \"value\": 0.466833,\n                    \"rank_name\": \"RPNDroid\",\n                    \"app_hash\": \"78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a\"\n                }\n            },\n            {\n                \"Score\": {\n                    \"value\": 7.5,\n                    \"rank_name\": \"Tosdr\",\n                    \"app_hash\": \"78eb9388a687c0500322809e8a997d43a44213cba947ce70e78cb2a2afbc478a\"\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GET App by package",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:8000/get/app/package?package=com.netflix.mediaclient",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"get",
+								"app",
+								"package"
+							],
+							"query": [
+								{
+									"key": "package",
+									"value": "incorrect",
+									"disabled": true
+								},
+								{
+									"key": "package",
+									"value": "com.netflix.mediaclient"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET App by package",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:8000/get/app/package?package=com.netflix.mediaclient",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"get",
+										"app",
+										"package"
+									],
+									"query": [
+										{
+											"key": "package",
+											"value": "incorrect",
+											"disabled": true
+										},
+										{
+											"key": "package",
+											"value": "com.netflix.mediaclient"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 13 Jun 2023 15:06:31 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "3727"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"App\": {\n        \"hash\": \"eee4076dc9b4648037fee9d5f6e5c062dec4d18491f2b7dda2accae0ebbab623\",\n        \"package\": \"com.netflix.mediaclient\",\n        \"version_code\": 50438,\n        \"version_name\": \"8.73.0 build 11 50438\",\n        \"min_sdk_version\": 24,\n        \"target_sdk_version\": 33,\n        \"max_sdk_version\": null,\n        \"category\": \"ENTERTAINMENT\",\n        \"uses_permission_list\": [\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_NETWORK_STATE\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.ACCESS_WIFI_STATE\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.BLUETOOTH\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.CHANGE_WIFI_MULTICAST_STATE\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.FOREGROUND_SERVICE\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.INTERNET\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.MODIFY_AUDIO_SETTINGS\",\n                    \"protection_level\": \"normal\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.POST_NOTIFICATIONS\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.POST_NOTIFICATIONS\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.RECORD_AUDIO\",\n                    \"protection_level\": \"dangerous|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.RECORD_AUDIO\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.WAKE_LOCK\",\n                    \"protection_level\": \"normal|instant\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"android.permission.WRITE_EXTERNAL_STORAGE\",\n                    \"protection_level\": \"dangerous\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": [\n                        {\n                            \"Rank\": {\n                                \"value\": 0.0243902,\n                                \"rank_name\": \"RPNDroid\",\n                                \"permission_name\": \"android.permission.WRITE_EXTERNAL_STORAGE\"\n                            }\n                        }\n                    ]\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.amazon.permission.SET_FLAG_NOSOFTKEYS\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.c2dm.permission.RECEIVE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.google.android.gms.permission.AD_ID\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.netflix.nfgsdk.permission.ngpstore\",\n                    \"protection_level\": \"signature\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.netflix.partner.activation.permission.CHANNEL_ID\",\n                    \"protection_level\": null,\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            }\n        ],\n        \"defines_permission_list\": [\n            {\n                \"Permission\": {\n                    \"name\": \"com.netflix.nfgsdk.permission.ngpstore\",\n                    \"protection_level\": \"signature\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            },\n            {\n                \"Permission\": {\n                    \"name\": \"com.netflix.partner\",\n                    \"protection_level\": \"0x00000012\",\n                    \"declared_group_list\": null,\n                    \"rank_list\": null\n                }\n            }\n        ],\n        \"defines_group_list\": null,\n        \"extraction_metadata_list\": [\n            {\n                \"ExtractionMetadata\": {\n                    \"source\": \"APKPure\",\n                    \"method\": \"web scraping\",\n                    \"timestamp\": \"2023-06-10T13:04:02\"\n                }\n            }\n        ],\n        \"score_list\": [\n            {\n                \"Score\": {\n                    \"value\": 0.233417,\n                    \"rank_name\": \"RPNDroid\",\n                    \"app_hash\": \"eee4076dc9b4648037fee9d5f6e5c062dec4d18491f2b7dda2accae0ebbab623\"\n                }\n            },\n            {\n                \"Score\": {\n                    \"value\": 5,\n                    \"rank_name\": \"Tosdr\",\n                    \"app_hash\": \"eee4076dc9b4648037fee9d5f6e5c062dec4d18491f2b7dda2accae0ebbab623\"\n                }\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "POST App upload",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer password",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"package\": \"com.whatsapp\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:8000/post/app/package",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"post",
+								"app",
+								"package"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST App upload",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer password",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"package\": \"net.universia.uva\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:8000/post/app/package",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"post",
+										"app",
+										"package"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "date",
+									"value": "Tue, 13 Jun 2023 15:07:21 GMT"
+								},
+								{
+									"key": "server",
+									"value": "uvicorn"
+								},
+								{
+									"key": "content-length",
+									"value": "22"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"requested\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
