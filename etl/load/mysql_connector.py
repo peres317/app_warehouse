@@ -20,7 +20,7 @@ class MysqlConnector:
         user = None
         password = None
         try:
-            with open(self.CONFIG_FILE, '+r') as config:
+            with open(self.CONFIG_FILE, '+r', encoding="utf8") as config:
                 mysql_config = json.loads(config.read())["MYSQL"]
                 host = mysql_config["host"]
                 database = mysql_config["database"]

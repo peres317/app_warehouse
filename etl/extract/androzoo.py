@@ -21,7 +21,7 @@ class Androzoo:
         self.API_KEY = None
         self.INDEX_FILE = None
         try:
-            with open(Androzoo.CONFIG_FILE, '+r') as config:
+            with open(Androzoo.CONFIG_FILE, '+r', encoding="utf8") as config:
                 azoo_data = json.loads(config.read())["ANDROZOO"]
                 self.API_KEY = azoo_data["API_KEY"]
                 self.INDEX_FILE = azoo_data["INDEX_FILE"]

@@ -273,12 +273,14 @@ class AdminController:
         
         # Upload data to warehouse
         loader = android_permission_group_loader.AndroidPermissionGroupLoader()
-        with open("data/google_downloads/groups.json", "+r") as f:
+        with open("data/google_downloads/groups.json", "+r", 
+                  encoding="utf8") as f:
             data = f.read()
             for group in json_ingest.JSONIngest(data).extract_data_from_json():
                 loader.load_android_permission_group(group)
         loader = android_permission_loader.AndroidPermissionLoader()
-        with open("data/google_downloads/permission.json", "+r") as f:
+        with open("data/google_downloads/permission.json", "+r", 
+                  encoding="utf8") as f:
             data = f.read()
             for perm in json_ingest.JSONIngest(data).extract_data_from_json():
                 loader.load_android_permission(perm)

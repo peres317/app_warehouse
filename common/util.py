@@ -33,7 +33,7 @@ class Util:
             list[str]: List of strings readed.
         """
         list = []
-        with open(filename, 'r') as f:
+        with open(filename, 'r', encoding="utf8") as f:
             for item in f:
                 list.append(item[:-1]) # Remove \n
         return list
@@ -46,7 +46,7 @@ class Util:
             filename (str): File path.
             list (list[str]): List of strings.
         """
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding="utf8") as f:
             f.write('\n'.join(list) + '\n')
     
     @staticmethod

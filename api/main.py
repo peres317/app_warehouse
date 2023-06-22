@@ -1,3 +1,5 @@
+from gevent import monkey; monkey.patch_all()
+
 import sys,os
 sys.path.append(os.getcwd())
 
@@ -34,7 +36,7 @@ live_upload_threads: list[Thread] = []
 
 # Obtain stored api keys
 CONFIG_FILE = "data/config.json"
-with open(CONFIG_FILE, '+r') as config:
+with open(CONFIG_FILE, '+r', encoding="utf8") as config:
     data_dict = json.loads(config.read())
     API_KEYS = data_dict["API_ACCESS_KEYS"]
     ADMIN_API_KEYS = data_dict["API_ADMIN_ACCESS_KEYS"]

@@ -15,6 +15,7 @@ class LiveSource(ABC):
     """Interface of a live source.
     """
     
+    DOWNLOAD_DIR = None
     DOWNLOAD_DIR_REL = "data/app_downloads/"
     
     @abstractmethod

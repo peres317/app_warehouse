@@ -71,8 +71,7 @@ class APKPure(WebSource):
         download_links = [l for l in download_links if "?version=latest" in l]
         if len(download_links) == 0:
             self.driver.close()
-            u.log_error("File not found.", "Downloading %s error." 
-                        % download_links[0])
+            u.log_error("File not found.", "Downloading error.")
             return None
         
         # Download app
@@ -117,18 +116,19 @@ class APKPure(WebSource):
         link_list = [elem.get_attribute("href") for elem in link_elements]
         link_list = [link for link in link_list if link]
         
-        # Fancy results
-        fancy_links = [link for link in link_list if "/download" in link]
-        fancy_links = [link for link in fancy_links if name in link]
-        if len(fancy_links) > 0:
-            package_found = fancy_links[0].split("/")[-2]
-            return (package_found, fancy_links[0])
-        
         # Bulk results
         bulk_links = [link for link in link_list if "?" not in link]
         bulk_links = [link for link in bulk_links if name in link]
         if len(bulk_links) > 0:
             package_found = bulk_links[0].split("/")[-1]
             return (package_found, bulk_links[0] + "/download")
+        
+        # Fancy results
+        fancy_links = [link for link in link_list if "/download" in link]
+        fancy_links = [link for link in fancy_links if name in link]
+        if len(fancy_links) > 0:
+            package_found = fancy_links[0].split("/")[-2]
+            return (package_found, fancy_links[0])
+
         
         return None
